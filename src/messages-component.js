@@ -15,7 +15,7 @@ class MessagesComponent extends React.Component {
             connected: false,
             newMessageContent: '',
             newMessageLabel: 'Note',
-            websocketServerName: 'http://localhost:8080/andrew-stomp-endpoint'
+            websocketServerName: 'http://localhost:8080/websocket-stomp-endpoint'
         }
     }
 
