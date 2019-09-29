@@ -1,50 +1,50 @@
-body {
-  font: 14px "Century Gothic", Futura, sans-serif;
-  margin: 20px;
+.connected button {
+
 }
 
-ol, ul {
-  padding-left: 30px;
-}
-
-.board-row:after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-.status {
-  margin-bottom: 10px;
-}
-
-.square {
-  background: #fff;
-  border: 1px solid #999;
-  float: left;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 0;
-  text-align: center;
-  width: 34px;
-}
-
-.square:focus {
-  outline: none;
-}
-
-.kbd-navigation .square:focus {
-  background: #ddd;
-}
-
-.game {
+.connectionDetails, .newMessageContent {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  width: 25%;
 }
 
-.game-info {
-  margin-left: 20px;
+button {
+  width: 50%;
+  background-color: lightgreen;
+}
+
+button:disabled {
+  background-color: lightgray;
+}
+
+.newMessageContent {
+  margin-top: 1em;
+}
+
+.newMessageForm input{
+  width: 70%;
+}
+
+.newMessageForm select {
+  width: 25%;
+}
+
+.messageLog {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 1em;
+}
+
+ul {
+  list-style: none;
+  height: 350px;
+  overflow: scroll;
+}
+
+.message {
+  margin-bottom: 1em;
+  border: 1px solid black;
+  border-radius: 10px 100px / 120px;
+  padding: 1em;
 }

@@ -9,9 +9,14 @@ class MessageLog extends React.Component {
 
   render() {
     return (
-      this.props.messages.map((rawMessage) => {
-        return <Message label={rawMessage.label} content={rawMessage.content} timestamp={rawMessage.timestamp} key={rawMessage.timestamp}/>
-      })
+      <div className="messageLog">
+        <div>Messages</div>
+        <ul>
+          {this.props.messages.map((rawMessage) => {
+            return <Message label={rawMessage.label} content={rawMessage.content} timestamp={rawMessage.timestamp} key={rawMessage.timestamp}/>
+          })}
+        </ul>
+      </div>
     );
   }
 }

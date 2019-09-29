@@ -8,9 +8,9 @@ class Message extends React.Component {
 
 	render() {
 		return (
-			<li>
-				<div>{this.props.label}</div>
-				<div>{this.props.content}</div>
+			<li className="message">
+				<div>Type: {this.props.label}</div>
+				<div>Content: {this.props.content}</div>
 				<div>{this.props.timestamp}</div>
 			</li>
 		);
